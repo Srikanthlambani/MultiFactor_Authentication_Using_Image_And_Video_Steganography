@@ -1,0 +1,13 @@
+"react": "^18.2.0",
+"react-dom": "^18.2.0",
+"react-scripts": "5.0.1",
+"web-vitals": "^2.1.4"
+"axios": "^1.2.0",
+"typewriter-effect": "^2.19.0"
+
+
+
+Note:
+
+Create a React App then repalce the src file with our src files in this file directory.
+(Seperately install the axios and typewriter effect before run the app.) 

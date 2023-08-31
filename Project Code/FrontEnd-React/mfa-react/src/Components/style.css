@@ -1,0 +1,294 @@
+#index {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(250, 246, 246);
+}
+
+.index2 {
+    position: absolute;
+    /* width: 50%; */
+}
+
+.userInput {
+    width: 85%;
+    margin: 5px 5px;
+    padding: 6px;
+    border-style: double;
+    border-color: beige;
+    border-width: unset;
+    border-radius: 8px;
+    outline: none;
+}
+
+.userInput:focus {
+    border-color: blue;
+}
+
+.removeBtn {
+    border: none;
+}
+
+.removeBtn:focus {
+    border: none;
+    outline: none;
+}
+
+.removeBtn:focus {
+    color: blue;
+    outline: none;
+
+}
+
+* {
+    margin: 0;
+    padding: 0px;
+    /* background-image: linear-gradient(to right ,pink,yellow); */
+    /* background-image:  linear-gradient(to right, #EADEDB 0%, #BC70A4 50%, #BFD641 75%); */
+}
+
+.nav-bar {
+    font-size: 20px;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    /* position: absolute; */
+}
+
+.nav-left a {
+    text-decoration: none;
+}
+
+.nav-left ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-left ul li {
+    padding: 19px 22px 10px 19px;
+}
+
+.nav-right {
+    display: flex;
+}
+
+
+#typeWriter {
+    padding-top: 10px;
+    color: #f21414;
+}
+
+#hideBtn {
+    /* left: 200px; */
+
+    visibility: hidden;
+    font-size: 1.2em;
+}
+
+#toggleBtn {
+    /* left: 200px; */
+
+    visibility: hidden;
+}
+
+.nav-right ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-right ul li {
+    padding: 19px 12px 10px 20px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+}
+
+#hideLogin {
+    visibility: visible;
+}
+
+.nav-right ul li a:hover {
+    background-color: #418ef3;
+    color: white;
+    font-weight: bold;
+    padding: 5.9px;
+    border: 0.9px solid rgb(219, 237, 252);
+    border-radius: 5px;
+}
+
+.active {
+    color: rgb(25, 0, 255);
+}
+
+@media screen and (min-width: 641px) and (max-width: 885px) {
+    #hideLogin {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 640px) {
+    #hideLogin {
+        visibility: hidden;
+    }
+
+
+    #hide {
+        visibility: hidden;
+        /* padding: 0;
+        margin: 0;
+        background-color: white;
+        text-decoration: none; */
+        border: white;
+    }
+
+    #hideBtn {
+        visibility: visible;
+        position: relative;
+        left: 90vw;
+        top: -49px;
+        color: blue;
+    }
+
+    #showToggleBtn {
+        visibility: visible;
+        color: black;
+        /* background-color: rgb(152, 211, 211); */
+        padding: 2px;
+        font-size: 0.99em;
+        margin-left: 75%;
+    }
+
+    #show {
+        visibility: visible;
+        /* position: absolute; */
+        z-index: 2000;
+
+    }
+
+    #show ul {
+        /* position: absolute; */
+        width: 55vw;
+        height: 99.9vh;
+        background-color: white;
+        border: 0.2px solid rgb(19, 18, 18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 2002;
+        /* box-shadow: 2px 2px 2px black; */
+        /* margin-left: 2vw; */
+    }
+
+    #show ul li a:hover {
+        background-color: #418ef3;
+        color: white;
+        font-weight: bold;
+        padding: 5.9px;
+        border: 0.9px solid rgb(219, 237, 252);
+        border-radius: 5px;
+    }
+
+    #show ul::before {
+        box-shadow: 2px 2px 2px black;
+    }
+
+    /* .nav-right ul li{
+        padding: 10px 30px;
+    } */
+
+    /* .regForm{
+        left: 7%;
+    } */
+    .subbtn {
+        margin-left: 40px;
+    }
+
+    #toggle {
+        visibility: visible;
+    }
+
+    #navChange {
+        position: absolute;
+        right: 0%;
+        top: 0.02%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 568px) {
+    #hideLogin {
+        visibility: hidden;
+    }
+
+    #hide {
+        visibility: hidden;
+        /* padding: 0;
+        margin: 0;
+        background-color: white;
+        text-decoration: none; */
+        border: white;
+    }
+
+    #hideBtn {
+        visibility: visible;
+        position: relative;
+        left: 90vw;
+        top: -49px;
+        color: blue;
+    }
+
+    #showToggleBtn {
+        visibility: visible;
+        color: black;
+        /* background-color: rgb(152, 211, 211); */
+        padding: 2px;
+        font-size: 0.99em;
+        margin-left: 75%;
+    }
+
+    #show {
+        visibility: visible;
+        /* position: absolute; */
+        z-index: 2000;
+    }
+
+    #show ul {
+        /* position: absolute; */
+        width: 75vw;
+        height: 99.9vh;
+        background-color: white;
+        border: 0.2px solid rgb(19, 18, 18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 2002;
+        box-shadow: 2px 2px 2px black;
+        /* margin-left: 2vw; */
+    }
+
+    #show ul li a:hover {
+        background-color: #418ef3;
+        color: white;
+        font-weight: bold;
+        padding: 5.9px;
+        border: 0.9px solid rgb(219, 237, 252);
+        border-radius: 5px;
+    }
+
+    .subbtn {
+        margin-left: 40px;
+    }
+
+    #toggle {
+        visibility: visible;
+    }
+
+    #navChange {
+        position: absolute;
+        right: 0%;
+        top: 0.02%;
+    }
+}

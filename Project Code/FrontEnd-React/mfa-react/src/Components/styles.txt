@@ -1,0 +1,43 @@
+
+/* Inline #10 | http://localhost:3000/about */
+
+#aboutMain {
+  /* position: absolute; */
+  position: relative;
+}
+
+/* Element | http://localhost:3000/about */
+
+.contentField {
+  /* top: 200px; */
+}
+
+/* Element | http://localhost:3000/about */
+
+.contentField > h4:nth-child(1) {
+  text-align: center;
+  color: red;
+  font-size: 2.0em;
+}
+
+/* Element | http://localhost:3000/about */
+
+.contentField > div:nth-child(2) {
+  /* width: 100%; */
+  order: revert;
+}
+
+/* Element | http://localhost:3000/about */
+
+.contentField > div:nth-child(2) > div:nth-child(1) {
+  padding: 12px;
+  order: revert;
+}
+
+/* Element | http://localhost:3000/about */
+
+.contentField > div:nth-child(2) > div:nth-child(2) {
+  padding: 6px;
+  text-decoration: ;
+  text-align: justify;
+}

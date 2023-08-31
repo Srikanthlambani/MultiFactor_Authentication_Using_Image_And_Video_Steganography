@@ -1,0 +1,27 @@
+.mainContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: auto;
+    background-color: rgb(250, 246, 246);
+}
+.contentBlocks{
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+#mainContent{
+    margin-top: 4vh;
+    width: 60vw;
+    text-align: justify;
+    /* box-shadow: 2px 2px 2px white; */
+    height: 65vh;
+    padding: 8px;
+    background-color: black;
+}
+@media screen and (min-width: 0px) and (max-width: 568px){
+    #heading{
+        position: absolute;
+    }
+}
